@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: blueviolet;
+}
+
+.container{
+    width: 95%;
+    position:relative;
+    height: auto;
+    padding:20px 0;
+    background-color: blueviolet;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+    
+}
+
+
+
+.container .col-login{
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-left: -200%;
+
+animation-name: loginAnimation;
+animation-duration: 1s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes loginAnimation {
+    from {
+        margin-left: -200%;
+    }
+    to {
+        margin-left: 0%;
+    }
+  }
+
+.container .col-login img{
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+.container .col-login form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .col-login form .input{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.container .col-login form .input label{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    color:#fff;
+    margin-bottom: 10px;
+    font-weight: 800;
+} 
+
+.container .col-login form .input input{
+    height: 40px;
+    border-radius: 5px;
+    border:none;
+    outline: none;
+    font-size: 1.2rem;
+    padding-left: 10px;
+}
+
+.container .col-login form .button{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container .col-login form .button button{
+    width: 60%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    background-color: greenyellow;
+    transition: ease-in 0.3s;
+}
+
+.container .col-login form .button button:hover{
+    background-color: rgb(197, 244, 125);
+    cursor: pointer;
+}
+
+
+.container .col-login p {
+    margin-top: 20px;
+}
+
+.container .col-login p a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.2s;
+}
+
+.container .col-login p a:hover{
+    color:greenyellow;
+}
+
+
+/* Tela do Cadastro */
+
+.container .col-cadastro{
+width: 100%;
+padding: 70px 0;
+display: none;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-right: -200%;
+
+animation-name: CadAnimation;
+animation-duration: 1s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes CadAnimation {
+    from {
+        margin-right: -200%;
+    }
+    to {
+        margin-right: 0%;
+    }
+  }
+.container .col-cadastro img{
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+.container .col-cadastro form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .col-cadastro form .input{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.container .col-cadastro form .input label{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    color:#fff;
+    margin-bottom: 10px;
+    font-weight: 800;
+} 
+
+.container .col-cadastro form .input input{
+    height: 40px;
+    border-radius: 5px;
+    border:none;
+    outline: none;
+    font-size: 1.2rem;
+    padding-left: 10px;
+}
+
+.container .col-cadastro form .button{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container .col-cadastro form .button button{
+    width: 60%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    background-color: greenyellow;
+    transition: ease-in 0.3s;
+}
+
+.container .col-cadastro form .button button:hover{
+    background-color: rgb(197, 244, 125);
+    cursor: pointer;
+}
+
+
+.container .col-cadastro p {
+    margin-top: 20px;
+}
+
+.container .col-cadastro p a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.2s;
+}
+
+.container .col-cadastro p a:hover{
+    color:greenyellow;
+}
+
+
+
+
+

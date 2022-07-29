@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden ;
+}
+
+header{
+    width: 100vw;
+    height: 10vh;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif; 
+    border-bottom:solid 2px #f9f6fd;
+}
+
+header button#menu{
+    position: absolute;
+    background-color: #fff;
+    border: none;
+    transition: ease 0.2s;
+    left: 30px;
+}
+
+header button#menu:hover{
+    cursor: pointer;
+}
+
+header button#fechar{
+    margin-left:-50%;
+    background-color: #fff;
+    border: none;
+    position: absolute;
+    transition: ease 0.2s;
+    left: 30px;
+}
+
+header button#fechar:hover{
+    cursor: pointer;
+}
+
+header svg.menu{
+    color:#58555e;
+}
+
+header .col_menu{
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    background-color: #fff;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: solid 2px #f9f6fd;
+    
+
+    font-size: 1.5rem;
+
+    margin-right:-70%;
+
+    transition: 0.2s linear 0.2s ;
+
+}
+
+header .col_menu h3{
+    color: #58555e;
+    letter-spacing: 0.3rem;
+    margin-top: 100px;
+
+}
+
+header .col_menu ul{
+    list-style: none;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    width: 100%;
+    padding-left: 10px;
+    color:#58555e;
+}
+
+@media (min-width: 400px) and (max-width: 599px){
+    header .col_menu{
+        width: 60vw;
+    }
+}
+
+@media (min-width: 600px){
+    header .col_menu{
+        width: 20vw;
+    }
+}
