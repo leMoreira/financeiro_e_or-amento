@@ -19,6 +19,8 @@ main .row{
 /* Coluna col-gr1 */
 main .row .col-gr1{
     position: relative;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
     width: 100%;
     height: 300px;
@@ -140,6 +142,78 @@ main .row .col-gr2{
 main .row .col-gr1 #chart_pizza{
     width: 100%;
 }
+
+
+/* Table Base */
+
+table {
+    font-family: arial;
+    max-width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  .table { 
+    width: 60%;
+    margin-bottom: 20px;
+  }
+  
+  .table th,
+  .table td {
+    font-weight: normal;
+    font-size: 12px;
+    padding: 8px 15px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: middle;
+    border-top: 1px solid #dddddd;
+  }
+  .table thead th {
+    background: #eeeeee;
+    vertical-align: bottom;
+  }   
+  .table tbody > tr:nth-child(odd) > td,
+  .table tbody > tr:nth-child(odd) > th {
+    background-color: #fafafa;
+  }    
+  .table .t-small {
+    width: 5%;
+  }
+  .table .t-medium {
+    width: 15%;
+  }
+  .table .t-status {
+    font-weight: bold;
+  }
+  .table .t-active {
+    color: #46a546;
+  }
+  .table .t-inactive {
+    color: #e00300;
+  }
+  .table .t-draft {
+    color: #f89406;
+  }
+  .table .t-scheduled {
+    color: #049cdb;
+  }
+  
+  /* Small Sizes */
+  @media (max-width: 480px) { 
+    .table-action thead {
+      display: none;
+    }
+    .table-action tr {
+      border-bottom: 1px solid #dddddd;
+    }
+    .table-action td {
+      border: 0;
+    }
+    .table-action td:not(:first-child) {
+      display: block;
+    }
+  }
 
 
 
@@ -267,42 +341,4 @@ main .row .col-gr2{
 main .row .col-gr1 #chart_pizza{
     width: 100%;
 }
-
-/* Estilizando a tabela */
-
-table, th, td {
-    border: 1px solid black;
-    font-size: 1.2rem;
-    }
-    
-    table {
-    border-collapse: collapse;
-    margin: auto;
-    width: 70%;
-    
-    }
-    
-    th, td{
-    padding: 10px;
-    text-align: center;
-    width: 120px;
-    }
-    
-    th{
-    font-weight: bold;
-    }
-    
-    
-    tr:nth-child(even) {
-    background-color: #ddd;
-    }
-    
-    tr:hover:nth-child(1n + 2) {
-    background-color: #58555e;
-    color: #fff;
-    }
-    
-
-
- } 
-
+ }
